@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<link rel="stylesheet" href="./styles/style.css">
+<script src="./app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador | Alura Latam + ONE</title>
+</head>
+<body>
+    <header class="cabecera">
+        <img src="./assets/alura_Logo.png" alt="Logotipo de Alura" class="cabecera_logo">
+    </header>
+    <main class="contenido">
+    <section class="contenido_areauno">
+            <textarea name="ingresatexto" id="ingresatexto" placeholder="Escribe el texto a encriptar o desencriptar aquí."  class="contenido_areauno_cajatexto"></textarea> 
+            <div class="con">    
+            <img src="./assets/frame_1.png" alt="Signo de exclamación" class="contenido_areauno_frameuno">
+                <p class="contenido_areauno_aviso">Solo minusculas y sin acentos.</p>
+            </div>
+            <div class="contenido_areauno_div">
+                <button type="submit" class="contenido_areauno_encrip">Encriptar</button>   
+                <button type="submit" class="contenido_areauno_desenc">Desencriptar</button>
+            </div>
+    </section>
+    <section class="contenido_areados">
+        <div class="contenido_areados_divuno">
+            <img src="./assets/frame_2.png" alt="Muñeco sosteniendo una lupa" class="contenido_areados_divuno_img">
+            <h5 class="contenido_areados_h5"> No hay nada por aquí</h5>
+            <p> Ingresa primero el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <div>
+            <textarea name="salidatexto" id="salidatexto" readonly></textarea>
+        </div>
+        <div>
+            <button type="button">Copiar</button>
+        </div>
+    </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
