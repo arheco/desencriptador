@@ -34,9 +34,23 @@ body {
 .contenido{
     margin: 0 15% 0 15%;
     display: flex;
-    align-items:flex-start;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.contenido_boton {
+    display: flex;
+    border: none;
+    background-color: var(--dark-blue);
+    color: #fff;
+    font-family: var(--font-uno);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 8rem;
+    height: 2.5rem; 
+    border-radius: 1.25rem;
 }
 
 /*Contenido izquierda*/
@@ -46,7 +60,7 @@ body {
     flex-direction: column;
     min-width: 65%;
     height: 32rem;
-    margin: 10% 0 0 0;
+    margin: 2% 0 0 0;
 }
 
 .contenido_areauno_cajatexto {
@@ -61,40 +75,26 @@ body {
 }
 
 .contenido_areauno_frameuno{
+    display: flex;
     flex-direction: row;
+    box-sizing: border-box;
+    justify-content:flex-start;
 }
 
-.contenido_areauno_aviso{
+.contenido_areauno_aviso_p{
+    display: flex;
     flex-direction: row;
+    font-family: var(--font-uno);
+    padding: 0 0.2rem;
+    font-size: 0.8rem;
 }
 
 .contenido_areauno_div {
     display: flex;
     flex-direction: row;
+    padding: 0.2rem 0 0 0;
 }
 
-.contenido_areauno_encrip {
-    display: flex;
-    border-color: var(--dark-blue);
-    background-color: var(--dark-blue);
-    color: #fff;
-    font-family: var(--font-uno);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.contenido_areauno_desenc {
-    display: flex;
-    border-color: var(--dark-blue);
-    background-color: var(--dark-blue);
-    color: #fff;
-    font-family: var(--font-uno);
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
 
 /*Contenido derecha*/
 
@@ -124,6 +124,30 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 5% 0 5%;
+}
+
+.contenido_areados_p {
+    font-family: var(--font-uno);
+    font-size: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contenido_areados_divout {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contenido_areados_salida {
+    border: none;
+    font-family: var(--font-uno);
+    color: var(--dark-blue);
+    width: 20rem;
+    font-family: var(--font-uno);
+    font-size: 1rem;
+    height: 29rem;
+    max-height: 29rem;
 }
 
 /*Condiciones especiales*/
