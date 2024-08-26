@@ -28,11 +28,11 @@ function busquedaDesencriptar() {
     textoIngresado = document.getElementById("EntradaTexto").value;
 
 textoDesencriptado = textoIngresado; 
-textoDesencriptado = textoDesencriptado.replaceAll('ai', 'a');
-textoDesencriptado = textoDesencriptado.replaceAll('enter', 'e');
-textoDesencriptado = textoDesencriptado.replaceAll('imes', 'i');
-textoDesencriptado = textoDesencriptado.replaceAll('ober', 'o');
 textoDesencriptado = textoDesencriptado.replaceAll('ufat', 'u');
+textoDesencriptado = textoDesencriptado.replaceAll('ober', 'o');
+textoDesencriptado = textoDesencriptado.replaceAll('imes', 'i');
+textoDesencriptado = textoDesencriptado.replaceAll('enter', 'e');
+textoDesencriptado = textoDesencriptado.replaceAll('ai', 'a');
 
 textoSaliente = textoDesencriptado;
 salidaTexto();
