@@ -1,19 +1,40 @@
-const vocal_a = 'a';
-const vocal_e = 'e';
-const vocal_i = 'i';
-const vocal_o = 'o';
-const vocal_u = 'u';
-const vocal_1 = 'ai';
-const vocal_2 = 'enter';
-const vocal_3 = 'imes';
-const vocal_4 = 'ober';
-const vocal_5 = 'ufat';
+let textoIngresado;
+let textoEncriptado;
+let textoSaliente;
+let campoMunecoSalida;
+let campoTextoSalida;
 
-/*La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat"
-*/
+function salidaTexto() {
+    document.getElementById("TextoOut").value = textoSaliente;
+    campoMunecoSalida = document.getElementById("MunecoBuscando").style.display = "none";
+    campoTextoSalida = document.getElementById("CampoSalida").style.display = "flex";    
+}
 
+function busquedaEncriptar() {
+    textoIngresado = document.getElementById("EntradaTexto").value;
+
+textoEncriptado = textoIngresado; 
+textoEncriptado = textoEncriptado.replaceAll('a', 'ai');
+textoEncriptado = textoEncriptado.replaceAll('e', 'enter');
+textoEncriptado = textoEncriptado.replaceAll('i', 'imes');
+textoEncriptado = textoEncriptado.replaceAll('o', 'ober');
+textoEncriptado = textoEncriptado.replaceAll('u', 'ufat');
+
+textoSaliente = textoEncriptado;
+salidaTexto();
+}
+
+function busquedaDesencriptar() {
+    textoIngresado = document.getElementById("EntradaTexto").value;
+
+textoDesencriptado = textoIngresado; 
+textoDesencriptado = textoDesencriptado.replaceAll('ai', 'a');
+textoDesencriptado = textoDesencriptado.replaceAll('enter', 'e');
+textoDesencriptado = textoDesencriptado.replaceAll('imes', 'i');
+textoDesencriptado = textoDesencriptado.replaceAll('ober', 'o');
+textoDesencriptado = textoDesencriptado.replaceAll('ufat', 'u');
+
+textoSaliente = textoDesencriptado;
+salidaTexto();
+}
 

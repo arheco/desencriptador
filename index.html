@@ -13,7 +13,7 @@
     </header>
     <main class="contenido">
     <section class="contenido_areauno">
-            <textarea name="ingresatexto" id="ingresatexto" placeholder="Escribe el texto a encriptar o desencriptar aquí."  class="contenido_areauno_cajatexto"></textarea> 
+            <textarea name="ingresatexto" id="EntradaTexto" placeholder="Escribe el texto a encriptar o desencriptar aquí."  class="contenido_areauno_cajatexto"></textarea> 
             <div class="contenido_areauno_frameuno">    
             <section>
                 <img src="./assets/exclamation.svg" alt="Signo de exclamación">
@@ -22,18 +22,18 @@
                 <p>Solo minusculas y sin acentos.</p>
             </div>
             <div class="contenido_areauno_div">
-                <button type="submit" class="contenido_boton">Encriptar</button>   
-                <button type="submit" class="contenido_boton">Desencriptar</button>
+                <button onclick="busquedaEncriptar()" class="contenido_boton">Encriptar</button>   
+                <button onclick="busquedaDesencriptar()" class="contenido_boton">Desencriptar</button>
             </div>
     </section>
     <section class="contenido_areados">
-        <div class="contenido_areados_divuno" id="5" style="display: flex">
+        <div class="contenido_areados_divuno" id="MunecoBuscando" style="display: flex">
             <img src="./assets/frame_2.png" alt="Muñeco sosteniendo una lupa" class="contenido_areados_divuno_img">
             <h5 class="contenido_areados_h5"> No hay nada por aquí</h5>
             <p class="contenido_areados_p"> Ingresa primero el texto que deseas encriptar o desencriptar.</p>
         </div>
-        <div class="contenido_areados_divout" id="6" style="display: none;">
-            <textarea name="salidatexto" id="salidatexto" readonly class="contenido_areados_salida" placeholder="lorem ipsum dolor"></textarea>
+        <div class="contenido_areados_divout" id="CampoSalida" style="display: none;">
+            <textarea name="salidatexto" id="TextoOut" readonly class="contenido_areados_salida"></textarea>
         </div>
         <div>
             <button type="button" class="contenido_boton" id="7" style="display: none;">Copiar</button>
