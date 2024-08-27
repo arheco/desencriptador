@@ -18,10 +18,11 @@ Este código pertenece al *challenge* de principiante en programación del Grupo
 * La letra "o" es convertida para "ober"
 * La letra "u" es convertida para "ufat".
 
+Este código contiene un botón "Copiar" en el área del texto encriptado/desencriptado. El botón "Copiar hace una llamada directa a la API del portapapeles.
+
 ### Por implementar.
 
-* Botón de copiar mediante API.
-* Validación del campo de texto, que no incluya caracteres especiales. 
+* Validación del campo de texto, que no incluya caracteres especiales ni acentos. 
 
 ### Bugs. 
 
