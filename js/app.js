@@ -3,12 +3,17 @@ let textoEncriptado;
 let textoSaliente;
 let campoMunecoSalida;
 let campoTextoSalida;
+let botonCopiar;
+let copiar;
+let err; 
 
 function salidaTexto() {
     document.getElementById("TextoOut").value = textoSaliente;
     campoMunecoSalida = document.getElementById("MunecoBuscando").style.display = "none";
-    campoTextoSalida = document.getElementById("CampoSalida").style.display = "flex";    
+    campoTextoSalida = document.getElementById("CampoSalida").style.display = "flex"; 
+    botonCopiar = document.getElementById("7").style.display= "flex";   
 }
+
 
 function busquedaEncriptar() {
     textoIngresado = document.getElementById("EntradaTexto").value;
@@ -38,3 +43,13 @@ textoSaliente = textoDesencriptado;
 salidaTexto();
 }
 
+async function CopiarTexto(){
+    try {
+        copiar = textoSaliente;
+        await navigator.clipboard.writeText(copiar);
+        alert('Se ha copiado el texto al portapapeles.')
+    }
+        catch (err) {
+            console.error ('Error al copiar', err);
+    }
+}
