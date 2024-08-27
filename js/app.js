@@ -17,13 +17,12 @@ function salidaTexto() {
 
 function busquedaEncriptar() {
     textoIngresado = document.getElementById("EntradaTexto").value;
-
-textoEncriptado = textoIngresado; 
-textoEncriptado = textoEncriptado.replaceAll('a', 'ai');
-textoEncriptado = textoEncriptado.replaceAll('e', 'enter');
-textoEncriptado = textoEncriptado.replaceAll('i', 'imes');
-textoEncriptado = textoEncriptado.replaceAll('o', 'ober');
-textoEncriptado = textoEncriptado.replaceAll('u', 'ufat');
+    textoEncriptado = textoIngresado; 
+    textoEncriptado = textoEncriptado.replaceAll('a', 'ai');
+    textoEncriptado = textoEncriptado.replaceAll('e', 'enter');
+    textoEncriptado = textoEncriptado.replaceAll('i', 'imes');
+    textoEncriptado = textoEncriptado.replaceAll('o', 'ober');
+    textoEncriptado = textoEncriptado.replaceAll('u', 'ufat');
 
 textoSaliente = textoEncriptado;
 salidaTexto();
@@ -31,7 +30,6 @@ salidaTexto();
 
 function busquedaDesencriptar() {
     textoIngresado = document.getElementById("EntradaTexto").value;
-
 textoDesencriptado = textoIngresado; 
 textoDesencriptado = textoDesencriptado.replaceAll('ufat', 'u');
 textoDesencriptado = textoDesencriptado.replaceAll('ober', 'o');
