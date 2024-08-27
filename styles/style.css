@@ -148,6 +148,7 @@ body {
     font-size: 1rem;
     height: 29rem;
     max-height: 29rem;
+    text-transform: lowercase;
 }
 
 /*Condiciones especiales*/
