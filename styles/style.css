@@ -221,6 +221,29 @@ body {
     .contenido_areauno_cajatexto {
         font-size: 1rem;
     }    
+
+    .contenido_areados{
+        width: auto;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .contenido_areauno_cajatexto {
+        font-size: 1rem;
+    }
+
+    .contenido_areados_h5{
+        font-size: 1rem;
+        margin: 5% 1% 0% 1%;
+    }
+
+    .contenido_areados_salida {
+        height: auto;
+    }
+
+    .contenido_areados_divuno_img{
+        display: none;
+    }
 }
 
 @media (max-width: 600px){
