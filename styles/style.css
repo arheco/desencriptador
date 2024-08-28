@@ -212,10 +212,15 @@ body {
         padding: 5%;
     }
 
-    .contenido_areados {
+    .contenido_areados{
         width: auto;
         flex-direction: column;
+        min-height: auto;
     }
+
+    .contenido_areauno_cajatexto {
+        font-size: 1rem;
+    }    
 }
 
 @media (max-width: 600px){
