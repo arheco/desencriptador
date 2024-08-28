@@ -3,10 +3,10 @@
 ## Autor: Arturo Hernández Cortés. 
  
 ## Versión. 
-Release 1.0
+Release 1.0.1
  
 ## Estado. 
-Finalizado. 
+Finalizado. En corrección de bugs. 
 
 ## ¿Qué hace este código?
 

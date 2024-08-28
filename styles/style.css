@@ -54,6 +54,21 @@ body {
     border-radius: 1.25rem;
 }
 
+.contenido_boton_2 {
+    display: flex;
+    border-color: var(--dark-blue);
+    background-color: var(--background-color);
+    color: var(--dark-blue);
+    font-family: var(--font-uno);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 8rem;
+    height: 2.5rem; 
+    border-radius: 1.25rem;
+}
+
 /*Contenido izquierda*/
 
 .contenido_areauno{
@@ -150,6 +165,21 @@ body {
     height: 28.5rem;
     max-height: 29rem;
     text-transform: lowercase;
+}
+
+.contenido_boton_3 {
+    display: flex;
+    border: none;
+    background-color: var(--dark-blue);
+    color: #fff;
+    font-family: var(--font-uno);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 5% auto;
+    width: 8rem;
+    height: 2.5rem; 
+    border-radius: 1.25rem;
 }
 
 /*Condiciones especiales*/

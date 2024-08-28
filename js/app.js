@@ -94,4 +94,4 @@ if (validado == false) {
     }
 }
 
-//Necesario revisar la lógica en las validaciones pares.
+//Necesario revisar la lógica en las validaciones PAR.
