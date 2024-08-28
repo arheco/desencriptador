@@ -22,6 +22,7 @@ body {
 /*Parte superior*/
 
 .cabecera {
+    display: flex;
     margin: 2.5rem 0rem 0rem 2.5rem;
 }
 
@@ -102,7 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 35rem;
-    width: 35;
+    width: 35%;
     background-color: #fff;
     border-radius: 32px;
 }
@@ -143,10 +144,10 @@ body {
     border: none;
     font-family: var(--font-uno);
     color: var(--dark-blue);
-    width: 20rem;
+    width: 90%;
     font-family: var(--font-uno);
     font-size: 1rem;
-    height: 29rem;
+    height: 28.5rem;
     max-height: 29rem;
     text-transform: lowercase;
 }
@@ -163,3 +164,66 @@ body {
     box-shadow: none;
 }
 
+/*Responsividad*/
+
+@media (max-width: 1200px){
+    
+    .cabecera {
+        justify-content: center;
+    }
+ 
+    .contenido{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contenido_areauno {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .contenido_areados {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    .cabecera {
+        justify-content: right;
+        margin-right: 8%;
+    }
+ 
+    .contenido{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contenido_areauno {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .contenido_areados{
+        width: auto;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .contenido_areauno_cajatexto {
+        font-size: 1rem;
+    }
+
+    .contenido_areados_h5{
+        font-size: 1rem;
+        margin: 5% 1% 0% 1%;
+    }
+
+    .contenido_areados_salida {
+        height: auto;
+    }
+
+    .contenido_areados_divuno_img{
+        display: none;
+    }
+}

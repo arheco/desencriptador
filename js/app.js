@@ -93,3 +93,5 @@ if (validado == false) {
         return false;
     }
 }
+
+//Necesario revisar la lógica en las validaciones pares.
