@@ -65,6 +65,7 @@ vatx = validaTexto();
         else{
             console.log("La desencriptación se completó correctamente.");
             salidaTexto();
+            vatx = 0;
     }
 }
 
@@ -89,9 +90,6 @@ if (validado == false) {
     else {
         reset();
         alert("Tu texto contiene caracteres no admitidos, revisa que solo tengas minúsculas sin acentos y sin signos.");
-        inputtext = '';
-        validado = '';
-        textoIngresado = '';
         return false;
     }
 }
